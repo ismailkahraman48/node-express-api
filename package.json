@@ -1,0 +1,47 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "Modern Node.js API with MongoDB & TypeScript",
+  "homepage": "https://github.com/ismailkahraman48/node-express-api#readme",
+  "bugs": {
+    "url": "https://github.com/ismailkahraman48/node-express-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismailkahraman48/node-express-api.git"
+  },
+  "license": "ISC",
+  "author": "ismailkahraman",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/http-errors": "^2.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.14",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
