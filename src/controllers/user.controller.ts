@@ -39,7 +39,7 @@ export async function login(
     const user = await authenticateUser(username, password);
     if (!JWT_SECRET)
       throw new Error("JWT_SECRET environment variable is not set");
-    const token = jwt.sign({ sub: user._id, role: user.role }, JWT_SECRET, {
+    const token = jwt.sign({ sub: user.id, role: user.role }, JWT_SECRET, {
       expiresIn: JWT_EXPIRES_IN as StringValue,
     });
     res.json({ token });

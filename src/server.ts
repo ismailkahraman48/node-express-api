@@ -1,9 +1,6 @@
 import dotenv from "dotenv";
 import app from "./app";
 import { connectDB } from "./config/db.config";
-import { User } from "./models/user.model";
-import { registerUser } from "./services/user.service";
-import createAdmin from "./scripts/createAdmin";
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
